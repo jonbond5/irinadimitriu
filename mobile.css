@@ -2,6 +2,10 @@
   box-sizing: content-box;
 }
 
+.col-33{
+  width:33%;
+}
+
 .jumbo-header{
   display:none;
 }
@@ -23,5 +27,5 @@ body{
   position:relative;
   top:25px;
   text-align: center;
-  color:red;
+  color:blue;
 }
