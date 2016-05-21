@@ -1,10 +1,8 @@
 *{
-  box-sizing: content-box;
+  box-sizing: border-box;
 }
 
-.col-33{
-  width:33%;
-}
+.col-33 {width:33%;}
 
 .jumbo-header{
   display:none;
