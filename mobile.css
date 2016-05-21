@@ -27,6 +27,8 @@ body{
 }
 
 .mobile-circle-section{
+  padding:50px 0;
+  background-color: #aaa;
 }
 
 .mobile-header-background{
