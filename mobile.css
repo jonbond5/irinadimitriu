@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 
-.col-33 {width:33%;float:left;text-align:center}
+.col-33 {width:33%;float:left}
 
 .jumbo-header{
   display:none;
@@ -18,10 +18,10 @@ body{
   width: 100px;
   /*background-color: rgba(0,0,0,0)*/;
   border:2px solid black;
+  margin:0 auto;
 }
 
 .mobile-circle-section{
-  text-align:center;
 }
 
 .mobile-header-background{
@@ -29,5 +29,5 @@ body{
   position:relative;
   top:25px;
   text-align: center;
-  color:blue;
+  color:red;
 }
