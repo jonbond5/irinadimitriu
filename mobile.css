@@ -2,10 +2,21 @@
   display:none;
 }
 
+body{
+  background-color: #eee;
+}
+
+.circle-button{
+  border-radius: 50%
+  height:50px;
+  width: 50px;
+  background-color: rgba(0,0,0,0);
+}
+
 .mobile-header-background{
   display:block !important;
-  margin:0;
+  position:relative;
+  top:25px;
   text-align: center;
-  background-color: red;
   color:blue;
 }
