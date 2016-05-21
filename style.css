@@ -17,16 +17,19 @@ body{
 
 .intro-text{
   position:relative;
-  font-size: 52px;
+  font-size: 72px;
 }
 
 .hr-header{
   position:relative;
   top:-80%;
+  color:cyan;
+  border: 2px;
 }
 
 .sub-intro-text{
   position:relative;
+  font-size:48px;
 }
 
 .fadeIn {
