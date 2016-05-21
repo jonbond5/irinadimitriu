@@ -31,7 +31,7 @@ body{
 }
 
 .hr-header{
-  border:2px solid #0cc;
+  border:2px solid black;
 }
 /* Animations***************/
 
@@ -47,7 +47,7 @@ body{
 
 .hr-width{
   -webkit-animation: hr-width 1s ease-in 1.5s both;
-  animation: hr-width 1s ease-in 1.5s both;
+  animation: hr-width .75s ease-in .5s both;
 }
 
 
