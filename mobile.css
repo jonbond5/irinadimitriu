@@ -12,6 +12,11 @@ body{
   background-color: #eee;
 }
 
+.social-media-icons{
+  position:relative;
+  top:25px;
+}
+
 .circle-button{
   border-radius: 50%;
   height: 200px;
