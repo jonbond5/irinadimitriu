@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 
-.col-33 {width:33%;float:left;}
+.col-33 {width:33%;float:left;text-align:center}
 
 .jumbo-header{
   display:none;
