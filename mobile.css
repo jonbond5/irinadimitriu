@@ -4,10 +4,6 @@
 
 .col-33 {width:25%;float:left;text-align:center;vertical-align: middle;}
 
-img{
-  margin:auto;
-}
-
 .jumbo-header{
   display:none;
 }
@@ -22,7 +18,7 @@ body{
   width: 200px;
   /*background-color: rgba(0,0,0,0)*/;
   border:2px solid black;
-  margin:0 auto;
+  margin:auto;
 }
 
 .mobile-circle-section{
@@ -33,5 +29,5 @@ body{
   position:relative;
   top:25px;
   text-align: center;
-  color:blue;
+  color:red;
 }
