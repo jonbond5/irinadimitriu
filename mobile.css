@@ -5,7 +5,5 @@
 .mobile-header-background{
   display:inline !important;
   background-color: red;
-  height:100px;
-  width:100%;
   color:blue;
 }
