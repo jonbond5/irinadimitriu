@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 
-.col-33 {width:25%;float:left}
+.col-33 {width:25%;float:left;text-align:center}
 
 img{
   margin:auto;
@@ -33,5 +33,5 @@ body{
   position:relative;
   top:25px;
   text-align: center;
-  color:red;
+  color:blue;
 }
