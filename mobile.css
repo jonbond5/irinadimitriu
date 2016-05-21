@@ -3,6 +3,7 @@
 }
 
 .mobile-header-background{
+  position:relative;
   display:block !important;
   background-color: red;
   color:red;
