@@ -6,6 +6,10 @@
   display:none;
 }
 
+.mobile-circle-section{
+  height:300px;
+}
+
 .mobile-header-background{
   display:block !important;
   position:relative;
