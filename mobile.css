@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 
-.col-33 {width:33%;float:left}
+.col-33 {width:25%;float:left}
 
 .jumbo-header{
   display:none;
@@ -14,8 +14,8 @@ body{
 
 .circle-button{
   border-radius: 50%;
-  height: 100px;
-  width: 100px;
+  height: 150px;
+  width: 150px;
   /*background-color: rgba(0,0,0,0)*/;
   border:2px solid black;
   margin:0 auto;
