@@ -7,6 +7,10 @@ body{
   margin:0;
 }
 
+.space{
+  height:100px;
+}
+
 .mobile-header-background{
   display:none;
 }
