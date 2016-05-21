@@ -3,7 +3,7 @@
 }
 
 .mobile-header-background{
-  display:inline !important;
+  display:block !important;
   background-color: red;
-  color:yellow;
+  color:red;
 }
