@@ -1,0 +1,115 @@
+html{
+  height:100%;
+}
+
+body{
+  height:100%;
+  margin:0;
+}
+
+video{
+  position:relative;
+}
+
+.jumbo-header{
+  text-align: center;
+}
+
+.intro-text{
+  position:relative;
+  font-size: 52px;
+}
+
+.hr-header{
+  position:relative;
+  top:-80%;
+}
+
+.sub-intro-text{
+  position:relative;
+}
+
+.fadeIn {
+    -webkit-animation: fadeIn 1s ease-in .5s both;
+    animation: fadeIn 1s ease-in .5s both;
+}
+
+.fadeIn2{
+    -webkit-animation: fadeIn2 1s ease-in 1.5s both;
+    animation: fadeIn2 1s ease-in 1.5s both;
+}
+
+.hr-width{
+  -webkit-animation: hr-width 1s ease-in 1.5s both;
+  animation: hr-width 1s ease-in 1.5s both;
+}
+
+
+
+/*Keyframes***************/
+
+@-webkit-keyframes fadeIn {
+    0%{
+      opacity: 0;
+      top: -75%;
+    }
+    100%{
+      opacity: 1;
+      top: -80%;
+    }
+}
+
+@keyframes fadeIn {
+    0%{
+      opacity: 0;
+      top: -75%;
+    }
+    100% {
+      opacity: 1;
+      top: -80%;
+    }
+}
+
+@-webkit-keyframes fadeIn2 {
+    0%{
+      opacity: 0;
+      top: -75%;
+    }
+    100%{
+      opacity: 1;
+      top: -80%;
+    }
+}
+
+@keyframes fadeIn2 {
+    0%{
+      opacity: 0;
+      top: -75%;
+    }
+    100% {
+      opacity: 1;
+      top: -80%;
+    }
+}
+
+@-webkit-keyframes hr-width {
+    0%{
+      opacity: 0;
+      width: 50px;
+    }
+    100%{
+      opacity: 1;
+      width: 150px;
+    }
+}
+
+@keyframes hr-width {
+    0%{
+      opacity: 0;
+      width:50px;
+    }
+    100% {
+      opacity: 1;
+      width:150px;
+    }
+}
