@@ -20,6 +20,10 @@ body{
   border:2px solid black;
 }
 
+.mobile-circle-section{
+  text-align:center;
+}
+
 .mobile-header-background{
   display:block !important;
   position:relative;
