@@ -22,12 +22,13 @@ body{
 .social-media-icons{
   position:relative;
   top:36px;
+  width:64px;
 }
 
 .circle-button{
   border-radius: 50%;
-  height: 200px;
-  width: 200px;
+  height: 100px;
+  width: 100px;
   /*background-color: rgba(0,0,0,0)*/;
   border:2px solid black;
   margin:auto;
@@ -36,7 +37,7 @@ body{
 .mobile-circle-section{
   padding:50px 0;
   background-color: #aaa;
-  height:200px;
+  height:100px;
 }
 
 .mobile-header-background{
