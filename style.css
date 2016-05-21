@@ -11,6 +11,34 @@ body{
   height:100px;
 }
 
+
+.col-33 {width:25%;float:left;text-align:center;vertical-align: middle;}
+
+
+body{
+  background-color: #eee;
+}
+
+.social-media-icons{
+  position:relative;
+  top:36px;
+}
+
+.circle-button{
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  /*background-color: rgba(0,0,0,0)*/;
+  border:2px solid black;
+  margin:auto;
+}
+
+.mobile-circle-section{
+  padding:50px 0;
+  background-color: #aaa;
+  height:300px;
+}
+
 .mobile-header-background{
   display:none;
 }
