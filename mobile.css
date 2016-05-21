@@ -3,7 +3,7 @@
 }
 
 .mobile-header-background{
-  display:inline;
+  display:inline !important;
   background-color: red;
   height:100px;
   width:100%;
