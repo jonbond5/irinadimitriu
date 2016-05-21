@@ -46,8 +46,8 @@ body{
 }
 
 .hr-width{
-  -webkit-animation: hr-width 1s ease-in .5s both;
-  animation: hr-width 1s ease-in .5s both;
+  -webkit-animation: hr-width 1s ease-in 1.5s both;
+  animation: hr-width 1s ease-in 1.5s both;
 }
 
 
@@ -102,7 +102,7 @@ body{
       width: 0px;
     }
     100%{
-      width: 200px;
+      width: 300px;
     }
 }
 
@@ -111,6 +111,6 @@ body{
       width:0px;
     }
     100% {
-      width:200px;
+      width:300px;
     }
 }
