@@ -23,8 +23,6 @@ body{
 .hr-header{
   position:relative;
   top:-80%;
-  color:cyan;
-  border: 2px;
 }
 
 .sub-intro-text{
