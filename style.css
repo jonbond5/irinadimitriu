@@ -22,7 +22,6 @@ body{
 .social-media-icons{
   position:relative;
   top:36px;
-  width:128px;
 }
 
 .circle-button{
@@ -51,6 +50,7 @@ body{
 .intro-text{
   position:relative;
   font-size: 72px;
+  color:red;
 }
 
 .hr-header{
