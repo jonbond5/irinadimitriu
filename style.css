@@ -7,16 +7,26 @@ body{
   margin:0;
 }
 
+p,h1,h2,h3,h4,h5,h6{
+  font-family: Helvetica;
+  color:#636262;
+}
+
 .space{
   height:100px;
 }
 
 
 .col-33 {width:25%;float:left;text-align:center;vertical-align: middle;}
-
+.col-3{width:33%;float:left;text-align:center}
+.col-2{width:50%;float:left;text-align:center}
 
 body{
   background-color: #eee;
+}
+
+.macBookImages{
+  width:340px;
 }
 
 .social-media-icons{
@@ -52,12 +62,12 @@ body{
 .intro-text{
   position:relative;
   font-size: 72px;
-  color:red;
 }
 
 .hr-header{
   position:relative;
-  top:-80%;
+  top:-60%;
+  border:2px solid black;
 }
 
 .sub-intro-text{
@@ -65,9 +75,12 @@ body{
   font-size:48px;
 }
 
-.hr-header{
-  border:2px solid black;
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img{
+  width:70%;
+  margin:auto;
 }
+
 /* Animations***************/
 
 .fadeIn {
@@ -91,44 +104,44 @@ body{
 @-webkit-keyframes fadeIn {
     0%{
       opacity: 0;
-      top: -75%;
+      top: -55%;
     }
     100%{
       opacity: 1;
-      top: -80%;
+      top: -60%;
     }
 }
 
 @keyframes fadeIn {
     0%{
       opacity: 0;
-      top: -75%;
+      top: -55%;
     }
     100% {
       opacity: 1;
-      top: -80%;
+      top: -60%;
     }
 }
 
 @-webkit-keyframes fadeIn2 {
     0%{
       opacity: 0;
-      top: -75%;
+      top: -55%;
     }
     100%{
       opacity: 1;
-      top: -80%;
+      top: -60%;
     }
 }
 
 @keyframes fadeIn2 {
     0%{
       opacity: 0;
-      top: -75%;
+      top: -55%;
     }
     100% {
       opacity: 1;
-      top: -80%;
+      top: -60%;
     }
 }
 

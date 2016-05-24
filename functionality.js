@@ -1,32 +1,49 @@
-function direction(){
-  if(window.scrollTop > pYpos){
-    pYpos = window.scrollTop;
+/*function direction(){
+  if(document.body.scrollTop > pYpos){
+    i--;
     return 'down';
   }
-  else if(window.scrollTop < pYpos){
-    pYpos = window.scrollTop;
+  else if(document.body.scrollTop < pYpos){
+    i++;
     return 'up';
   }
 }
 
-function scrollHandler(e){
-  var direction1 = direction();
-  if(direction1 == 'down' && scrollPos > min){
-    scrollPos--;
-    scrollTo(scrollIndex[scrollPos]);
+function scrollHandler(){
+  var d = new Date();
+  var t = d.getTime();
+  if(t > pTime+2000){
+    var di = direction();
+    disableScroll();
+    setTimeout(enableScroll,1000);
+    scrollTo('#'+i);
+    pTime = t;
   }
-  else if(direction1 == 'up' && scrollPos < max){
-    scrollPos++;
-    scrollTo(scrollIndex[scrollPos]);
+  /*
+  var d = new Date();
+  var t = d.getTime();
+  disableScroll();
+  //window.removeEventListener('scroll',scrollHandler);
+  if(t > pTime){
+    var direction1 = direction();
+    if(direction1 == 'down' && scrollPos > min){
+      scrollPos--;
+      scrollTo(scrollIndex[scrollPos]);
+      pTime = t;
+    }
+    else if(direction1 == 'up' && scrollPos < max){
+      scrollPos++;
+      scrollTo(scrollIndex[scrollPos]);
+      pTime = t;
+    }
+    enableScroll();
   }
+  //window.addEventListener('scroll',scrollHandler);
 }
 
 function scrollTo(dest){
-  window.removeEventListener('scroll',scrollTo);
-  disableScroll();
-  $(document.body).animate({'scrollTop':$(dest).offset().top },1000);
-  enableScroll();
-  window.addEventListener('scroll',scrollTo);
+  pYpos = $(dest).offset().top;
+  $(document.body).animate({'scrollTop':pYpos },1000);
 }
 
 
@@ -43,15 +60,17 @@ function scrollTo(dest){
     }
   }
 }
-*/
+
 
 //scrollIndex bounds:
+var i = 1;
 var max = 2;
 var min = 0;
 var screenWidth = screen.width;
 var scrollPos = 0;
 var scrollIndex = [];
-var pYpos = 0
+var pYpos = 0;
+var pTime = 0;
 scrollIndex[0] = '.jumbo-header';
 scrollIndex[1] = '.social-media-icons';
 scrollIndex[2] = '.about-irina';
@@ -80,7 +99,7 @@ function enableScroll() {
     window.ontouchmove = null;
 }
 
-// Returns a function, that, as long as it continues to be invoked, will not
+// Returns a function that, as long as it continues to be invoked, will not
 // be triggered. The function will be called after it stops being called for
 // N milliseconds. If `immediate` is passed, trigger the function on the
 // leading edge, instead of the trailing.
@@ -110,10 +129,10 @@ function begin(){
     clearQueue();
   }
 }
-*/
 
-var scroller = debounce(function(e){
-  scrollHandler(e)},1000);
+
+//var scroller = debounce(function(e){
+//  scrollHandler(e)},1000
 
 window.addEventListener('scroll',scrollHandler);
 
