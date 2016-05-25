@@ -5,6 +5,7 @@ html{
 body{
   height:100%;
   margin:0;
+  background-color: #eee;
 }
 
 p,h1,h2,h3,h4,h5,h6{
@@ -17,42 +18,15 @@ p,h1,h2,h3,h4,h5,h6{
 }
 
 
-.col-33 {width:25%;float:left;text-align:center;vertical-align: middle;}
-.col-3{width:33%;float:left;text-align:center}
-.col-2{width:50%;float:left;text-align:center}
+.col-33 {width:25%;float:left;text-align:center;}
+.col-3 { width:33%;float:left;text-align:center;}
+.col-2 { width:50%;float:left;text-align:center;}
 
-body{
-  background-color: #eee;
-}
+
 
 .macBookImages{
   width:340px;
-}
-
-.social-media-icons{
   position:relative;
-  top:18px;
-  width:64px;
-}
-
-.circle-button{
-  border-radius: 50%;
-  height: 100px;
-  width: 100px;
-  /*background-color: rgba(0,0,0,0)*/;
-  border:2px solid black;
-  margin:auto;
-}
-
-.mobile-circle-section{
-  text-align: center;
-  padding-top: 10px;
-  background-color: #aaa;
-  height:200px;
-}
-
-.mobile-header-background{
-  display:none;
 }
 
 .jumbo-header{
@@ -75,10 +49,59 @@ body{
   font-size:48px;
 }
 
-.carousel-inner > .item > img,
-.carousel-inner > .item > a > img{
-  width:70%;
+/* Carousel */
+.carousel{
   margin:auto;
+}
+
+#carousel-image1{
+  padding-left:60px;
+}
+
+#carousel-image3{
+  padding-right: 60px;
+}
+
+button{
+  position:absolute;
+}
+.left{
+  left:0px;
+  top:1750px;
+}
+
+.right{
+  right:0px;
+  top:1750px;
+}
+
+
+
+/* Misc. */
+.circle-button{
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  /*background-color: rgba(0,0,0,0)*/;
+  border:2px solid black;
+  margin:auto;
+}
+
+.mobile-circle-section{
+  text-align: center;
+  padding-top: 10px;
+  background-color: #aaa;
+  height:200px;
+}
+
+.mobile-header-background{
+  display:none;
+}
+
+.social-media-icons{
+  position:relative;
+  top:18px;
+  width:64px;
 }
 
 /* Animations***************/
@@ -91,6 +114,11 @@ body{
 .fadeIn2{
     -webkit-animation: fadeIn2 1s ease-in 1.5s both;
     animation: fadeIn2 1s ease-in 1.5s both;
+}
+
+.rise:hover{
+  -webkit-animation: rise .5s ease-in 0s both;
+  animation: rise .5s ease-in 0s both;
 }
 
 .hr-width{
@@ -142,6 +170,25 @@ body{
     100% {
       opacity: 1;
       top: -60%;
+    }
+}
+
+
+@-webkit-keyframes rise {
+    0%{
+      top:0px;
+    }
+    100%{
+      top:-50px;
+    }
+}
+
+@keyframes rise {
+    0%{
+      top: 0px;
+    }
+    100% {
+      top: -50px;
     }
 }
 
