@@ -1,143 +1,50 @@
-/*function direction(){
-  if(document.body.scrollTop > pYpos){
-    i--;
-    return 'down';
+// Constructor
+
+var CarIndex = [];
+var currentItem = 0;
+var max = 27;
+function setUp(){
+  CarIndex[1] = 'Annatwobirthday.png';
+  CarIndex[2] = 'Cookie_Magazine_Sept_2008.png';
+  CarIndex[3] = 'DAI_410_DRINKING_VESSEL_IDEATION3.png';
+  CarIndex[4] = 'DAI_410_DRINKING_VESSEL_IDEATION4.png';
+  CarIndex[5] = 'DAI_410_DRINKING_VESSEL_IDEATION5.png';
+  CarIndex[6] = 'DAI_410_DRINKING_VESSEL_IDEATION6.png';
+  CarIndex[7] = 'DAI_410_DRINKING_VESSEL_IDEATION7.png';
+  CarIndex[8] = 'Glamour_Aug_2008.png';
+  CarIndex[9] = 'Glamour_Italy_Sept_2008.png';
+  CarIndex[10] = 'Marie_Claire_Sept_2008.png';
+  CarIndex[11] = 'Nylon_Oct_2008.png';
+  CarIndex[12] = 'photo_1.png';
+  CarIndex[13] = 'photo_3.png';
+  CarIndex[14] = 'photo_4.png';
+  CarIndex[15] = 'photo_5.png';
+  CarIndex[16] = 'Sketches1-01.png';
+  CarIndex[17] = 'Time_Style&Design_2008.png';
+  CarIndex[18] = 'V_Magazine_Winter_2008.png';
+  CarIndex[19] = 'Vogue_2007_Bruno_Frisoni_for_Vivier.png';
+  CarIndex[20] = 'IMG_4768.png';
+  CarIndex[21] = 'zoo_party.png';
+  CarIndex[22] = 'CAD-3D_Rendering-01.png';
+  CarIndex[23] = 'SOUL-FOODS-Logo-Design-with-Yoga-final.png';
+  CarIndex[24] = 'owen_turning_four.png';
+  CarIndex[25] = 'GRAYSON_TURNING_FOUR.png';
+  CarIndex[26] = 'FINAL_SPEECH_N_MOTION_LOGO.png';
+  CarIndex[0] = 'IMG_4776.png';
+}
+
+// dir: 'right' and 'left'
+function changeImage(dir){
+  if(dir == 'right'){
+    if(currentItem == max) currentItem = 0;
+    else currentItem++;
   }
-  else if(document.body.scrollTop < pYpos){
-    i++;
-    return 'up';
+  else{
+    if(currentItem == 0) currentItem = 27;
+    else currentItem--;
   }
+  var name = 'images/' + CarIndex[currentItem];
+  $('#carousel-image1').attr('src', name);
 }
 
-function scrollHandler(){
-  var d = new Date();
-  var t = d.getTime();
-  if(t > pTime+2000){
-    var di = direction();
-    disableScroll();
-    setTimeout(enableScroll,1000);
-    scrollTo('#'+i);
-    pTime = t;
-  }
-  /*
-  var d = new Date();
-  var t = d.getTime();
-  disableScroll();
-  //window.removeEventListener('scroll',scrollHandler);
-  if(t > pTime){
-    var direction1 = direction();
-    if(direction1 == 'down' && scrollPos > min){
-      scrollPos--;
-      scrollTo(scrollIndex[scrollPos]);
-      pTime = t;
-    }
-    else if(direction1 == 'up' && scrollPos < max){
-      scrollPos++;
-      scrollTo(scrollIndex[scrollPos]);
-      pTime = t;
-    }
-    enableScroll();
-  }
-  //window.addEventListener('scroll',scrollHandler);
-}
-
-function scrollTo(dest){
-  pYpos = $(dest).offset().top;
-  $(document.body).animate({'scrollTop':pYpos },1000);
-}
-
-
-  /*
-  if(abs(e.originalEvent.wheelDelta) > 0){
-    e.preventDefault();
-    if(e.originalEvent.wheelDelta > 0 && scrollPos > min){
-      scrollPos--;
-      scrollTo(scrollIndex[scrollPos]);
-    }
-    else if(e.originalEvent.wheelDelta < 0 && scrollPos < max){
-      scrollPos++;
-      scrollTo(scrollIndex[scrollPos]);
-    }
-  }
-}
-
-
-//scrollIndex bounds:
-var i = 1;
-var max = 2;
-var min = 0;
-var screenWidth = screen.width;
-var scrollPos = 0;
-var scrollIndex = [];
-var pYpos = 0;
-var pTime = 0;
-scrollIndex[0] = '.jumbo-header';
-scrollIndex[1] = '.social-media-icons';
-scrollIndex[2] = '.about-irina';
-
-
-function preventDefault(e) {
-  e = e || window.event;
-  if (e.preventDefault)
-      e.preventDefault();
-  e.returnValue = false;
-}
-
-function disableScroll() {
-  if (window.addEventListener) // older FF
-      window.addEventListener('DOMMouseScroll', preventDefault, false);
-  window.onwheel = preventDefault; // modern standard
-  window.onmousewheel = document.onmousewheel = preventDefault; // older browsers, IE
-  window.ontouchmove  = preventDefault; // mobile
-}
-
-function enableScroll() {
-    if (window.removeEventListener)
-        window.removeEventListener('DOMMouseScroll', preventDefault, false);
-    window.onmousewheel = document.onmousewheel = null;
-    window.onwheel = null;
-    window.ontouchmove = null;
-}
-
-// Returns a function that, as long as it continues to be invoked, will not
-// be triggered. The function will be called after it stops being called for
-// N milliseconds. If `immediate` is passed, trigger the function on the
-// leading edge, instead of the trailing.
-function debounce(func, wait, immediate) {
-	var timeout;
-	return function() {
-		var context = this, args = arguments;
-		var later = function() {
-			timeout = null;
-			if (!immediate) func.apply(context, args);
-		};
-		var callNow = immediate && !timeout;
-		clearTimeout(timeout);
-		timeout = setTimeout(later, wait);
-		if (callNow) func.apply(context, args);
-	};
-};
-
-/*
-function clearQueue(){
-  eventQueue = [];
-}
-
-function begin(){
-  if(eventQueue.length > 2){
-    alert(eventQueue.pop());
-    clearQueue();
-  }
-}
-
-
-//var scroller = debounce(function(e){
-//  scrollHandler(e)},1000
-
-window.addEventListener('scroll',scrollHandler);
-
-/*
-$(window).on('scroll',_.debounce(function(){
-  scrollTo('.about-irina');
-},100));
-*/
+setUp();
