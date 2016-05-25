@@ -10,6 +10,7 @@ body{
 
 p,h1,h2,h3,h4,h5,h6{
   font-family: Helvetica;
+  font-weight: lighter;
   color:#636262;
 }
 
@@ -17,11 +18,24 @@ p,h1,h2,h3,h4,h5,h6{
   height:100px;
 }
 
+.down-arrow{
+  position:relative;
+  top:-390px;
+   width:33%;
+   align:center;
+   height:100px;
+   opacity: 0.5;
+}
 
 .col-33 {width:25%;float:left;text-align:center;}
 .col-3 { width:33%;float:left;text-align:center;}
 .col-2 { width:50%;float:left;text-align:center;}
 
+.about-irina{
+  width:90%;
+  text-align: center;
+  margin:auto;
+}
 
 
 .macBookImages{
@@ -126,6 +140,16 @@ button{
   animation: hr-width 1s ease-in 1.5s both;
 }
 
+/*
+.normal-fade{
+  -webkit-animation: normal-fade 1s ease-in 1.5s both;
+  animation: normal-fade 1s ease-in 1.5s both;
+}
+*/
+.normal-fade-motion{
+  animation: normal-fade-motion 5s infinite ease 2.5s;
+}
+
 
 /*Keyframes***************/
 
@@ -208,4 +232,38 @@ button{
     100% {
       width:300px;
     }
+}
+/*
+@-webkit-keyframes normal-fade{
+  0%{
+    opacity:0;
+  }
+  100%{
+    opacity:1;
+  }
+}
+
+@keyframes normal-fade{
+  0%{
+    opacity:0;
+  }
+
+  50%{
+    opacity:.15;
+  }
+  100%{
+    opacity:0.5;
+  }
+}
+*/
+@keyframes normal-fade-motion{
+  0%{
+    top:-390px;
+  }
+  50%{
+    top:-400px;
+  }
+  100%{
+    top:-390px;
+  }
 }
