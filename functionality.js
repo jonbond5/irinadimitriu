@@ -11,8 +11,10 @@ function setUp(){
   CarIndex[1] = 'new-image1.png';
   CarIndex[2] = 'new-image2.png';
   //CarIndex[2] = 'photo_1.png';
-  CarIndex[3] = 'marie_claire_sept_2008.png';
-  CarIndex[4] = 'vogue_2007_bruno_frisoni_for_vivier.png';
+  //CarIndex[3] = 'marie_claire_sept_2008.png';
+  CarIndex[3] = 'new-image3.png';
+  CarIndex[4] = 'new-image4.png';
+  //CarIndex[4] = 'vogue_2007_bruno_frisoni_for_vivier.png';
   CarIndex[5] = 'DAI_410_DRINKING_VESSEL_IDEATION5.png';
   CarIndex[6] = 'CAD-3D_Rendering-01.png';
   CarIndex[7] = 'FINAL_SPEECH_N_MOTION_LOGO.png';
