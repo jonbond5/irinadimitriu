@@ -7,8 +7,10 @@ var item3 = 2;
 var max = 26;
 function setUp(){
   CarIndex[0] = 'img_4776.png';
-  CarIndex[1] = 'annatwobirthday.png';
-  CarIndex[2] = 'photo_1.png';
+//  CarIndex[1] = 'annatwobirthday.png';
+  CarIndex[1] = 'new-image1.png';
+  CarIndex[2] = 'new-image2.png';
+  //CarIndex[2] = 'photo_1.png';
   CarIndex[3] = 'marie_claire_sept_2008.png';
   CarIndex[4] = 'vogue_2007_bruno_frisoni_for_vivier.png';
   CarIndex[5] = 'DAI_410_DRINKING_VESSEL_IDEATION5.png';
