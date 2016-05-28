@@ -25,12 +25,14 @@
   font-size:72px;
 }
 
+.mobile-intro-hr{
+  position:relative;
+  top:125px;
+  width:150px;
+}
+
 .mobile-sub-intro-text{
   position:relative;
   top:150px;
   font-size:64px;
-}
-
-.mobile-header-background > hr{
-  width:100px;
 }
