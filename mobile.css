@@ -6,6 +6,11 @@
   display:none;
 }
 
+.jumbo-header-text{
+  width:100%;
+  height:100%;
+}
+
 .mobile-circle-section{
   height:300px;
 }
