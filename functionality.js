@@ -54,7 +54,7 @@ function begin(){
 function reset(){
   for(var i=0; i<=max; i++){
     $('#'+i)
-      .animate({ left:'+=825%' }, 5000);
+      .animate({ left:'+=825%' }, 1000);
   }
 }
 
