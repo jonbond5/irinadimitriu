@@ -21,19 +21,19 @@
 
 .mobile-intro-text{
   position:relative;
-  top:45%;
-  font-size:96px;
+  top:30%;
+  font-size:164px;
 }
 
 .mobile-intro-hr{
   position:relative;
-  top:50%;
-  width:150px;
+  top:31%;
+  width:250px;
   border: 2px solid black;
 }
 
 .mobile-sub-intro-text{
   position:relative;
-  top:55%;
+  top:32%;
   font-size:72px;
 }

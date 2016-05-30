@@ -18,9 +18,11 @@ p,h1,h2,h3,h4,h5,h6{
   height:100px;
 }
 
-.col-33 {width:25%;float:left;text-align:center;}
+.col-25 {width:25%;float:left;text-align:center;}
 .col-3 { width:33%;float:left;text-align:center;}
 .col-2 { width:50%;float:left;text-align:center;}
+.col-12{ width:5%;float:left;text-align:center;}
+
 
 .about-irina{
   width:80%;
@@ -54,30 +56,39 @@ p,h1,h2,h3,h4,h5,h6{
   font-size:48px;
 }
 
+.icons{
+  width:72px;
+  height:72px;
+  padding-right: 18px;
+}
+
 /* Carousel */
 .carousel{
   margin:auto;
+  width:100%;
+  overflow:hidden;
+  white-space: nowrap;
 }
 
 #carousel-image1{
   padding-left:60px;
+  position: relative;
+}
+
+#carousel-image2{
+  position: relative;
 }
 
 #carousel-image3{
   padding-right: 60px;
+  position: relative;
 }
 
-button{
-  position:absolute;
-}
-.left{
-  left:0px;
-  top:1750px;
-}
-
-.right{
-  right:0px;
-  top:1750px;
+.button{
+  /*position:relative;*/
+  opacity:.5;
+  position:relative;
+  top:100px;
 }
 
 

@@ -5,7 +5,7 @@
   <link rel=stylesheet media="screen and (max-device-width:800px)" href=mobile.css>
   <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
   <script type="text/javascript" src="jquery-1.12.3.js"></script>
-  <script type="text/javascript" src=functionality.js></script>
+  <script type=text/javascript src=functionality.js></script>
 <html>
 <body>
   <div class=jumbo-header style=width:100%;height:100%>
@@ -77,30 +77,48 @@ Interested in working together? I would love to hear from you. Please email: iri
   <div style=height:300px>
   </div>
 
+<h1 style=text-align:center>
+  My Accomplishments
+</h1>
 
-<div class=carousel>
-  <div class=col-3>
+<div class=carousel><!--
+  <div class=col-3 style=position:relative id=1>
     <img src='images/img_4776.png' width=80% height=350px id=carousel-image1>
   </div>
-  <div class=col-3>
+  <div class=col-3 style=position:relative id=2>
     <img src='images/new-image1.png' width=80% height=350px id=carousel-image2>
   </div>
-  <div class=col-3>
-    <img src='images/new-image2.png' width=80% height=350px id=carousel-image3>
+  <div class=col-3 style=position:relative id=3>
   </div>
 </div>
-
-<div>
-<button type="button" onclick=changeImage('left') class=left>
-  <img src='images/left-arrow.png' width=50px height=150px>
-</button>
-<button type="button" onclick=changeImage('right') class=right>
-  <img src='images/chevron-right.png' width=50px height=150px>
-</button>
+<div>-
+  <div onclick=changeImage('left') class='button'>
+    <img src='images/left-arrow.png' width=50px height=150px>
+  </div>
+  <div onclick=changeImage('right') class='button'>
+    <img src='images/chevron-right.png' width=50px height=150px>
+  </div>-->
 </div>
 
+<div style=height:50px>
+</div>
+<hr style=width:100%;margin:auto>
+<div style=height:50px>
+</div>
 
-
+<div style=margin:auto;width:80%;text-align:center>
+  <h2>
+    Skills
+  </h2>
+  <p>Enter skills here</p>
+</div>
+<div class=space>
+</div>
+<div style=width:280px;margin:auto>
+  <img class=icons src=images/email-icon.png>
+  <a href=tel:5085582233><img class=icons src=images/phone-icon.png></a>
+  <img class=icons src=images/document-icon.png>
+</div>
 
 </body>
 </html>

@@ -5,16 +5,17 @@ var item1 = 0;
 var item2 = 1;
 var item3 = 2;
 var max = 26;
+var first = 0;
+//  CarIndex[1] = 'annatwobirthday.png';
+//CarIndex[2] = 'photo_1.png';
+//CarIndex[3] = 'marie_claire_sept_2008.png';
+//CarIndex[4] = 'vogue_2007_bruno_frisoni_for_vivier.png';
 function setUp(){
   CarIndex[0] = 'img_4776.png';
-//  CarIndex[1] = 'annatwobirthday.png';
   CarIndex[1] = 'new-image1.png';
   CarIndex[2] = 'new-image2.png';
-  //CarIndex[2] = 'photo_1.png';
-  //CarIndex[3] = 'marie_claire_sept_2008.png';
   CarIndex[3] = 'new-image3.png';
   CarIndex[4] = 'new-image4.png';
-  //CarIndex[4] = 'vogue_2007_bruno_frisoni_for_vivier.png';
   CarIndex[5] = 'DAI_410_DRINKING_VESSEL_IDEATION5.png';
   CarIndex[6] = 'CAD-3D_Rendering-01.png';
   CarIndex[7] = 'FINAL_SPEECH_N_MOTION_LOGO.png';
@@ -37,6 +38,24 @@ function setUp(){
   CarIndex[24] = 'owen_turning_four.png';
   CarIndex[25] = 'grayson_turning_four.png';
   CarIndex[26] = 'dai_410_drinking_vessel_ideation7.png';
+  for(var i=0;i <= max; i++){
+    $('.carousel')
+      .append('<div class=col-3 style=position:relative;display:inline;float:none;padding-left:3% id='+(i+1)+'><img src=images/' + CarIndex[i] + ' width=30% height=350px></div>');
+  }
+}
+
+function begin(){
+  for(var i=0; i<=max; i++){
+    $('#'+i)
+      .animate({ left:'-=33%' }, 800);
+  }
+}
+
+function reset(){
+  for(var i=0; i<=max; i++){
+    $('#'+i)
+      .animate({ left:'+=825%' }, 5000);
+  }
 }
 
 // dir: 'right' and 'left'
@@ -53,12 +72,21 @@ function changeImage(dir){
     else if(item3 == 0){ item3=max;item1--;item2--;}
     else               { item1--;item2--;item3--;}
   }
+  $('#carousel-image1').fadeOut('slow');
+  $('#carousel-image2').fadeOut('slow');
+  $('#carousel-image3').fadeOut('slow');
   var name1 = 'images/' + CarIndex[item1];
   var name2 = 'images/' + CarIndex[item2];
   var name3 = 'images/' + CarIndex[item3];
-  $('#carousel-image1').attr('src', name1);
-  $('#carousel-image2').attr('src', name2);
-  $('#carousel-image3').attr('src', name3);
+  $('#carousel-image1').attr('src', name1).fadeIn('slow').delay(1000);
+  $('#carousel-image2').attr('src', name2).fadeIn('slow').delay(1000);
+  $('#carousel-image3').attr('src', name3).fadeIn('slow').delay(1000);
+
 }
 
-setUp();
+
+$(document).ready(function(){
+  setUp();
+  mainLoop = setInterval(begin,5000);
+  clear = setInterval(reset,125000);
+})
