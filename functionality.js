@@ -16,11 +16,11 @@ function setUp(){
   CarIndex[2] = 'new-image2.png';
   CarIndex[3] = 'new-image3.png';
   CarIndex[4] = 'new-image4.png';
-  CarIndex[5] = 'DAI_410_DRINKING_VESSEL_IDEATION5.png';
-  CarIndex[6] = 'CAD-3D_Rendering-01.png';
-  CarIndex[7] = 'FINAL_SPEECH_N_MOTION_LOGO.png';
-  CarIndex[8] = 'Glamour_Aug_2008.png';
-  CarIndex[9] = 'Time_Style&Design_2008.png';
+  CarIndex[5] = 'dai_410_drinking_vessel_ideation5.png';
+  CarIndex[6] = 'cad-3d_rendering-01.png';
+  CarIndex[7] = 'final_speech_n_motion_logo.png';
+  CarIndex[8] = 'glamour_aug_2008.png';
+  CarIndex[9] = 'time_style&design_2008.png';
   CarIndex[10] = 'dai_410_drinking_vessel_ideation5.png';
   CarIndex[11] = 'nylon_oct_2008.png';
   CarIndex[12] = 'cookie_magazine_sept_2008.png';
