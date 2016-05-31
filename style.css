@@ -5,13 +5,16 @@ html{
 body{
   height:100%;
   margin:0;
-  background-color: #eee;
 }
 
 p,h1,h2,h3,h4,h5,h6{
   font-family: Helvetica;
   font-weight: lighter;
   color:#636262;
+}
+
+ul{
+  list-style-position: inside;
 }
 
 .space{
@@ -60,6 +63,12 @@ p,h1,h2,h3,h4,h5,h6{
   width:72px;
   height:72px;
   padding-right: 18px;
+}
+
+p[id*='book']{
+  display:none;
+  position:relative;
+  top:-50px;
 }
 
 /* Carousel */
@@ -131,12 +140,12 @@ p,h1,h2,h3,h4,h5,h6{
     -webkit-animation: fadeIn2 1s ease-in 1.5s both;
     animation: fadeIn2 1s ease-in 1.5s both;
 }
-
+/*
 .rise:hover{
-  -webkit-animation: rise .5s ease-in 0s both;
-  animation: rise .5s ease-in 0s both;
+  -webkit-animation: rise .25s ease-in 0s both;
+  animation: rise .3s ease-in 0s both;
 }
-
+*/
 .hr-width{
   -webkit-animation: hr-width 1s ease-in 1.5s both;
   animation: hr-width 1s ease-in 1.5s both;
@@ -145,6 +154,7 @@ p,h1,h2,h3,h4,h5,h6{
 
 
 /*Keyframes***************/
+
 
 @-webkit-keyframes fadeIn {
     0%{

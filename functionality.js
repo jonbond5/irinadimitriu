@@ -88,4 +88,54 @@ $(document).ready(function(){
   setUp();
   mainLoop = setInterval(begin,5000);
   clear = setInterval(reset,125000);
+  $('#1').hover(
+    function(){
+      $('#book-text1').fadeIn(250);
+      $('#book1').animate({top:'-=30px'});
+    },
+    function(){
+      $('#book-text1').fadeOut(250);
+      $('#book1').animate({top:'+=30px'});
+    }
+  )
+  $('#2').hover(
+    function(){
+      $('#book-text2').fadeIn(250);
+      $('#book2').animate({top:'-=30px'});
+    },
+    function(){
+      $('#book-text2').fadeOut(250);
+      $('#book2').animate({top:'+=30px'});
+    }
+  )
+  $('#3').hover(
+    function(){
+      $('#book-text3').fadeIn(250);
+      $('#book3').animate({top:'-=30px'});
+    },
+    function(){
+      $('#book-text3').fadeOut(250);
+      $('#book3').animate({top:'+=30px'});
+    }
+  )
+  $('#4').hover(
+    function(){
+      $('#book-text4').fadeIn(250);
+      $('#book4').animate({top:'-=30px'});
+    },
+    function(){
+      $('#book-text4').fadeOut(250);
+      $('#book4').animate({top:'+=30px'});
+    }
+  )
+  $('#5').hover(
+    function(){
+      $('#book-text5').fadeIn(250);
+      $('#book5').animate({top:'-=30px'});
+    },
+    function(){
+      $('#book-text5').fadeOut(250);
+      $('#book5').animate({top:'+=30px'});
+    }
+  )
 })
