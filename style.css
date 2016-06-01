@@ -13,6 +13,11 @@ p,h1,h2,h3,h4,h5,h6,li{
   color:#636262;
 }
 
+
+p,li{
+  font-size: 18px;
+}
+
 ul{
 }
 
@@ -38,6 +43,10 @@ li{
   width:80%;
   text-align: center;
   margin:auto;
+}
+
+.irina-content{
+  margin-top:50px;
 }
 
 

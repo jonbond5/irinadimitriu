@@ -13,6 +13,14 @@
   background: #eee;
 }
 
+.about-irina{
+  height:100%;
+}
+
+.irina-content{
+  font-size: 28px;
+}
+
 .jumbo-header{
   display:none;
 }
