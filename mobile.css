@@ -2,6 +2,17 @@
   box-sizing: border-box;
 }
 
+#logo{
+  position:absolute;
+  bottom:65%;
+  width:80%;
+  right:9%;
+}
+
+.gradient{
+  background: #eee;
+}
+
 .jumbo-header{
   display:none;
 }
