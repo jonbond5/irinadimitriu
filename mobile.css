@@ -54,20 +54,20 @@
 
 .mobile-intro-text{
   position:relative;
-  top:250px;
+  top:300px;
   font-size:164px;
 }
 
 .mobile-intro-hr{
   position:relative;
-  top:50px;
+  top:200px;
   width:250px;
   border: 2px solid black;
 }
 
 .mobile-sub-intro-text{
   position:relative;
-  top:40px;
+  top:210px;
   font-size:72px;
 }
 
