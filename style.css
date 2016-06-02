@@ -119,30 +119,9 @@ p[id*='book']{
 
 
 /* Misc. */
-.circle-button{
-  border-radius: 50%;
-  height: 100px;
-  width: 100px;
-  /*background-color: rgba(0,0,0,0)*/;
-  border:2px solid black;
-  margin:auto;
-}
-
-.mobile-circle-section{
-  text-align: center;
-  padding-top: 10px;
-  background-color: #aaa;
-  height:200px;
-}
 
 .mobile-header-background{
   display:none;
-}
-
-.social-media-icons{
-  position:relative;
-  top:18px;
-  width:64px;
 }
 
 /* Animations***************/
