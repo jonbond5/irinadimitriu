@@ -33,6 +33,11 @@
 
 .carousel{
   position: absolute;
+  height:400px;
+}
+
+.buttons{
+  padding-top: 350px!important;
 }
 
 .jumbo-header{
