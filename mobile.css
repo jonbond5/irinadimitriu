@@ -11,6 +11,16 @@
 
 .gradient{
   background: #eee;
+  height:1500px;
+}
+
+.about-hr{
+  display: none;
+}
+
+.macbooks{
+  position:relative;
+  top:-65%;
 }
 
 .about-irina{
@@ -19,6 +29,10 @@
 
 .irina-content{
   font-size: 28px;
+}
+
+.carousel{
+  position: absolute;
 }
 
 .jumbo-header{
@@ -40,19 +54,24 @@
 
 .mobile-intro-text{
   position:relative;
-  top:30%;
+  top:250px;
   font-size:164px;
 }
 
 .mobile-intro-hr{
   position:relative;
-  top:31%;
+  top:50px;
   width:250px;
   border: 2px solid black;
 }
 
 .mobile-sub-intro-text{
   position:relative;
-  top:32%;
+  top:40px;
   font-size:72px;
+}
+
+#logo{
+  top:-80px;
+  z-index: -1;
 }
