@@ -97,17 +97,18 @@ function mobileChange(){
 }
 
 function mobileBegin(){
-  if(counter >= max){
-    mobileReset();
-    return;
+  if(counter >= max-1){
+    counter=2;
   }
   $('.carousel').fadeOut('slow');
+  setTimeout(function(){
+    $('.carousel').empty();
+    for(var i=counter-2; i<counter; i++){
+      $('.carousel')
+        .append('<div class=col-2 style="position: relative;display:inline;float:none;padding-left:3%"><img src=images/' + CarIndex[i] + ' width=50% height=350px></div>');
+    }
+  },1000);
   setTimeout(function(){$('.carousel').fadeIn('slow')},1000);
-  $('.carousel').empty();
-  for(var i=counter-2; i<counter; i++){
-    $('.carousel')
-      .append('<div class=col-2 style="position: relative;display:inline;float:none;padding-left:3%"><img src=images/' + CarIndex[i] + ' width=50% height=350px></div>');
-  }
   counter += 2;
 }
 
