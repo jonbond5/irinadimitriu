@@ -63,6 +63,7 @@ function reset(){
 
 // dir: 'right' and 'left'
 function changeImage(dir){
+  alert('this');
   d = new Date();
   if(d.getTime() < time+1000){
     return;
