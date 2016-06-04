@@ -4,9 +4,10 @@
 
 #logo{
   position:absolute;
-  bottom:65%;
+  top:100px;
   width:80%;
   right:9%;
+  z-index:-1;
 }
 
 .gradient{
@@ -59,30 +60,25 @@
 
 .mobile-intro-text{
   position:relative;
-  top:400px;
-  font-size:164px;
+  top:500px;
+  font-size:120px;
 }
 
 .mobile-intro-hr{
   position:relative;
-  top:300px;
+  top:450px;
   width:250px;
   border: 2px solid black;
 }
 
 .mobile-sub-intro-text{
   position:relative;
-  top:310px;
-  font-size:72px;
-}
-
-#logo{
-  top:-80px;
-  z-index: -1;
+  top:440px;
+  font-size:64px;
 }
 
 .skills-h2{
-  font-size:128px!important;
+  font-size:64px!important;
 }
 
 li{

@@ -1,9 +1,8 @@
 // Constructor
-
 var CarIndex = [];
 var counter = 2;
 var max = 27;
-var first = 0;
+var time = 0;
 
 function setUp(){
   CarIndex[0] = "cad-3d_rendering-01.png";
@@ -42,29 +41,36 @@ function setUp(){
 }
 
 function begin(){
+  if(counter >= max-1){
+    reset();
+    return;
+  }
   for(var i=0; i<=max; i++){
-    $('#'+i)
-      .animate({ left:'-=33%' }, 800);
+    $('#'+i).animate({ left:'-=33%' }, 800);
   }
   counter++;
 }
 
 function reset(){
+  clearInterval(mainLoop);
   for(var i=0; i<=max; i++){
     $('#'+i)
-      .animate({ left:'+=825%' }, 1000);
+      .animate({ left:'+=792%' }, 1000);
   }
-  counter=0;
+  counter=2;
+  mainLoop = setInterval(begin,5000);
 }
 
 // dir: 'right' and 'left'
 function changeImage(dir){
+  d = new Date();
+  if(d.getTime() < time+1000){
+    return;
+  }
+  time = d.getTime();
+  clearInterval(mainLoop);
   if(dir == 'right' && counter >= max-1){
-    clearInterval(mainLoop);
-    clearInterval(clear);
     reset();
-    mainLoop = setInterval(begin,5000);
-    clear    = setInterval(reset,125000);
   }
   else if(dir == 'right'){
     for(var i=0; i<=max; i++){
@@ -80,13 +86,13 @@ function changeImage(dir){
     }
     counter--;
   }
+  mainLoop = setInterval(begin,5000);
 }
 
 
 $(document).ready(function(){
   setUp();
   mainLoop = setInterval(begin,5000);
-  clear = setInterval(reset,125000);
   $('#b1').hover(
     function(){
       $('#book-text1').fadeIn(250);
