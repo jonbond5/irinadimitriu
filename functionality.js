@@ -108,7 +108,7 @@ function mobileBegin(){
         .append('<div class=col-2 style="position: relative;display:inline;float:none;padding-left:3%"><img src=images/' + CarIndex[i] + ' width=50% height=350px></div>');
     }
   },1000);
-  setTimeout(function(){$('.carousel').fadeIn('slow')},1000);
+  setTimeout(function(){$('.carousel').fadeIn('slow')},1250);
   counter += 2;
 }
 
