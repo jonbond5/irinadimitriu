@@ -3,6 +3,7 @@ var CarIndex = [];
 var counter = 2;
 var max = 27;
 var time = 0;
+var width = screen.width;
 
 function setUp(){
   CarIndex[0] = "cad-3d_rendering-01.png";
@@ -33,7 +34,9 @@ function setUp(){
   CarIndex[25] = "sketch1_irinadimitriucom-01.png";
   CarIndex[26] = "graphic_design7_irinadimitriucom-01-01-01-01-01-01-01.png";
   CarIndex[27] = "sketch2_irinadimitriucom-01-01.png";
+}
 
+function desktopSetup(){
   for(var i=0;i <= max; i++){
     $('.carousel')
       .append('<div class=col-3 style="position: relative;display:inline;float:none;padding-left:3%" id='+(i+1)+'><img src=images/' + CarIndex[i] + ' width=30% height=350px></div>');
@@ -63,7 +66,6 @@ function reset(){
 
 // dir: 'right' and 'left'
 function changeImage(dir){
-  alert('this');
   d = new Date();
   if(d.getTime() < time+1000){
     return;
@@ -90,58 +92,84 @@ function changeImage(dir){
   mainLoop = setInterval(begin,5000);
 }
 
+function mobileChange(){
+
+}
+
+function mobileBegin(){
+  if(counter >= max){
+    mobileReset();
+    return;
+  }
+  $('.carousel').fadeOut('slow');
+  setTimeout(function(){$('.carousel').fadeIn('slow')},1000);
+  $('.carousel').empty();
+  for(var i=counter-2; i<counter; i++){
+    $('.carousel')
+      .append('<div class=col-2 style="position: relative;display:inline;float:none;padding-left:3%"><img src=images/' + CarIndex[i] + ' width=50% height=350px></div>');
+  }
+  counter += 2;
+}
 
 $(document).ready(function(){
-  setUp();
-  mainLoop = setInterval(begin,5000);
-  $('#b1').hover(
-    function(){
-      $('#book-text1').fadeIn(250);
-      $('#book1').animate({top:'-=30px'});
-    },
-    function(){
-      $('#book-text1').fadeOut(250);
-      $('#book1').animate({top:'+=30px'});
-    }
-  )
-  $('#b2').hover(
-    function(){
-      $('#book-text2').fadeIn(250);
-      $('#book2').animate({top:'-=30px'});
-    },
-    function(){
-      $('#book-text2').fadeOut(250);
-      $('#book2').animate({top:'+=30px'});
-    }
-  )
-  $('#b3').hover(
-    function(){
-      $('#book-text3').fadeIn(250);
-      $('#book3').animate({top:'-=30px'});
-    },
-    function(){
-      $('#book-text3').fadeOut(250);
-      $('#book3').animate({top:'+=30px'});
-    }
-  )
-  $('#b4').hover(
-    function(){
-      $('#book-text4').fadeIn(250);
-      $('#book4').animate({top:'-=30px'});
-    },
-    function(){
-      $('#book-text4').fadeOut(250);
-      $('#book4').animate({top:'+=30px'});
-    }
-  )
-  $('#b5').hover(
-    function(){
-      $('#book-text5').fadeIn(250);
-      $('#book5').animate({top:'-=30px'});
-    },
-    function(){
-      $('#book-text5').fadeOut(250);
-      $('#book5').animate({top:'+=30px'});
-    }
-  )
+  if(screen.width > 800){
+    setUp();
+    desktopSetup();
+    mainLoop = setInterval(begin,5000);
+    $('#b1').hover(
+      function(){
+        $('#book-text1').fadeIn(250);
+        $('#book1').animate({top:'-=30px'});
+      },
+      function(){
+        $('#book-text1').fadeOut(250);
+        $('#book1').animate({top:'+=30px'});
+      }
+    )
+    $('#b2').hover(
+      function(){
+        $('#book-text2').fadeIn(250);
+        $('#book2').animate({top:'-=30px'});
+      },
+      function(){
+        $('#book-text2').fadeOut(250);
+        $('#book2').animate({top:'+=30px'});
+      }
+    )
+    $('#b3').hover(
+      function(){
+        $('#book-text3').fadeIn(250);
+        $('#book3').animate({top:'-=30px'});
+      },
+      function(){
+        $('#book-text3').fadeOut(250);
+        $('#book3').animate({top:'+=30px'});
+      }
+    )
+    $('#b4').hover(
+      function(){
+        $('#book-text4').fadeIn(250);
+        $('#book4').animate({top:'-=30px'});
+      },
+      function(){
+        $('#book-text4').fadeOut(250);
+        $('#book4').animate({top:'+=30px'});
+      }
+    )
+    $('#b5').hover(
+      function(){
+        $('#book-text5').fadeIn(250);
+        $('#book5').animate({top:'-=30px'});
+      },
+      function(){
+        $('#book-text5').fadeOut(250);
+        $('#book5').animate({top:'+=30px'});
+      }
+    )
+  }
+  else{
+    setUp();
+    mobileBegin();
+    begin = setInterval(mobileBegin,5000);
+  }
 })
