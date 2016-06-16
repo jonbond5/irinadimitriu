@@ -23,6 +23,13 @@
   top:-65%;
 }
 
+p[id*='book']{
+  font-size:18px;
+  display:block;
+  position:relative;
+  top:0px;
+}
+
 .about-irina{
   height:100%;
 }
