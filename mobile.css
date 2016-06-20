@@ -96,12 +96,9 @@ li{
   font-size:36px;
 }
 
-#email{
-  height:125px;
-}
 
 .col-3-mobile{
-  width:33%;
+  width:25%;
   text-align:center;
   float:left;
 }

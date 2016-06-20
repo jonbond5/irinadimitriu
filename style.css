@@ -94,10 +94,6 @@ p[id*='book']{
   position:relative;
 }
 
-#email{
-  height:60px;
-}
-
 /* Misc. */
 
 .mobile-header-background{
