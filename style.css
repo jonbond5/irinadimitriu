@@ -34,6 +34,10 @@ li{
   background:linear-gradient(90deg,#fff,#ddd,#fff);
 }
 
+.image-wrapper{
+  vertical-align: middle;
+}
+
 .col-25 {width:25%;float:left;text-align:center;}
 .col-3 { width:33%;float:left;text-align:center;}
 .col-2 { width:50%;float:left;text-align:center;}
